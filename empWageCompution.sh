@@ -32,5 +32,24 @@ echo "Dialy Wage for Part Time Employee  is: $daily_wage"
 
 partDailyEmployeeWage
 
-echo "From here solving using caseStatment "
+echo "From here solving using caseStatment"
 
+month()
+{
+a=$1
+for (( days=1;days<=20;days++ ))
+do
+dayss=$(($a * $days |bc -l))
+echo "$dayss"
+done
+}
+
+day=1
+case "$day" in
+$day) echo "Full time wage of total working days of a month is :"
+      month 160
+      echo "Part time wage of total working days of a month is :"
+      month 80
+       ;;
+
+esac
