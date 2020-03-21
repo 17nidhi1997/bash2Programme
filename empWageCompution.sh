@@ -67,3 +67,17 @@ case "1" in
 
        ;;
 esac
+
+
+workHours()
+{
+full_Wage=160
+wokHrs=$(( $full_Wage / $PER_HOUR |bc -l))
+echo "$wokHrs: hrs for Full Time Working Hours"
+
+
+wokHrs=$((  $daily_wage / $PER_HOUR |bc -l))
+echo "$wokHrs: hrs for Part Time Working Hours"
+}
+
+workHours
