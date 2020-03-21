@@ -31,3 +31,6 @@ echo "Dialy Wage for Part Time Employee  is: $daily_wage"
 }
 
 partDailyEmployeeWage
+
+echo "From here solving using caseStatment "
+
