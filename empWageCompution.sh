@@ -81,3 +81,31 @@ echo "$wokHrs: hrs for Part Time Working Hours"
 }
 
 workHours
+
+
+declare -A storeDialyWage
+echo "Press 1 For part time wage"
+echo  "Press 2 For Full time wage"
+read option
+case $option in
+1)  for (( days=1;days<=20;days++ ))
+    do
+    dayss=$((80 * $days |bc -l))
+    echo -e "Wage for the day is 80 & total wage is = {$storeDialyWage[$dayss]}\c"
+    echo
+    done ;;
+2)  for (( days=1;days<=20;days++ ))
+    do
+    dayss=$((160 * $days |bc -l))
+    echo -e "Wage for the day is 160 & total wage is = {$storeDialyWage[$dayss]}\c"
+    echo
+    done ;;
+*)
+ echo "enter the correct of option"
+;;
+esac
+
+
+
+
+
